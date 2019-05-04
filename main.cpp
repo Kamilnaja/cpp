@@ -22,13 +22,13 @@ void getNumber(int numberVal) {
 }
 
 int main() {
-    for (int i = 0; i < 3; i++) {
+    for (unsigned int i = 0; i < sizeof(items)/sizeof(items[0]); i++) {
         getNumber(i);
     }
 
     int result = 0;
     for (int i = 0; i < 3; i++) {
-      result += items[i];
+        result += items[i];
     }
 
     cout << "Wynik obliczeń wynosi " << result;
